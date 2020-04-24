@@ -21,7 +21,7 @@ $(document).ready(function() {
     function getElements(response) {
       if (response.conversion_rates[getCurrency]) {
         let rate = response.conversion_rates[getCurrency];
-        let conversion = (amount * rate);
+        let conversion = (amount * rate).toFixed(2);
         $("#newAmount").text(" " + conversion + " " + getCurrency);
       }
     }
