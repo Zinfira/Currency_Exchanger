@@ -8,7 +8,7 @@
       <div class="jumbotron">
         <h1>Currency Exchanger</h1>
       </div>        
-      <form class="converter">
+      <form id="converter">
         <div class="row">
           <div class="col-md-4">
           <h3>How much would you like to convert?</h3>
@@ -27,12 +27,12 @@
             </select>
           </div>
           <div class="col-md-4">
-            <button type="submit" class="btn btn-primary" id="convert">Convert</button>
+            <button type="submit" class="btn btn-primary">Convert</button>
           </div>
         </div>
       </form>
       <div id="result">
-        <h3></h3>
+        <h3>Your amount: <span id="newAmount"></span></h3>
       </div>
     </div>
   </body>

@@ -6,17 +6,25 @@ import $ from "jquery";
 
 
 $(document).ready(function() {
-  $("form#converter").submit(function(event) {
+  $("#converter").submit(function(event) {
     event.preventDefault();
+    const amount = $("input#amount").val();
+    const getCurrency = $("#currency").val();
 
     (async () => {
       let converter = new Converter();
-      let response = await converter.getExchange();
-      let amount = $("input#amount").val();
-      let getCurrency = $("#currency").val();
-      checkResponse(response);
-    });
+      const response = await converter.getExchange();
+      getElements(response);
+  
+    })();
 
+    function getElements(response) {
+      if (response.conversion_rates[getCurrency]) {
+        let rate = response.conversion_rates[getCurrency];
+        let conversion = (amount * rate);
+        $("#newAmount").text(" " + conversion + " " + getCurrency);
+      }
+    }
     
   });
 });
