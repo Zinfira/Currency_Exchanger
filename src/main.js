@@ -25,7 +25,7 @@ $(document).ready(function() {
         $("#showAmount").text(amount);
         $("#newAmount").text(" " + conversion + " " + getCurrency);
         $("#result").show();
-      }
+      } 
     }
     
   });
