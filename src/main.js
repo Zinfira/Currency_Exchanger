@@ -23,6 +23,7 @@ $(document).ready(function() {
         let rate = response.conversion_rates[getCurrency];
         let conversion = (amount * rate).toFixed(2);
         $("#newAmount").text(" " + conversion + " " + getCurrency);
+        $("#result").show();
       }
     }
     

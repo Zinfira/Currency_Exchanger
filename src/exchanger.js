@@ -10,7 +10,7 @@ export class Converter {
       }
       return jsonifiedResponse;
     } catch (error) {
-      alert ("error!");
+      return error;
     }
   }
 
