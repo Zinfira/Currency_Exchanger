@@ -8,6 +8,15 @@
 
 _This project lets user to type in an amount in US dollars, and then choose which currency it should be converted to. To determine the most recent exchange rate, this application will make an API call to the following [website](https://www.exchangerate-api.com)._
 
+## Specifications:
+| Specicfication | Example Input | Example Output |
+|----------------|---------------|----------------|
+| Program takes an entered amount in US dollars(USD) and returns converted amount in Euro(EUR) | 1 US dollar (USD) | 0.9268 Euro(EUR) |
+| Program takes an entered amount in US dollars(USD) and returns converted amount in Australian Dollars(AUD) | 1 US dollar (USD) | 1.5726 Australian Dollar(AUD) |
+| Program takes an entered amount in US dollars(USD) and returns converted amount in Russian Rubles(RUB) | 1 US dollar (USD) | 75.0858 Russian Rubles(RUB) |
+| Program takes an entered amount in US dollars(USD) and returns converted amount in Japanese Yen(JPY) | 1 US dollar (USD) | 107.5855 Japanese Yen(JPY) |
+| Program takes an entered amount in US dollars(USD) and returns converted amount in South Korean Won(KRW) | 1 US dollar (USD) | 1229.8659 South Korean Won(KRW) |
+
 ## Setup/Installation Requirements
 
 Clone this repository via Terminal using the following commands:
